@@ -22,7 +22,7 @@
 
 .banner {
     width: 90%;
-    height: 695px;
+    height: 735px;
     background: #FFCA42;
 }
 
@@ -43,20 +43,10 @@
     left: 16%;
 }
 
-/* .banner__ellipse--lg {
-    width: 385px;
-    height: 600px;
-    top: -25%;
-    border-bottom-left-radius: 300px;
-    border-top-left-radius: 280px;
-    left: 55%;
-} */
-
 .banner__logo {
     width: 25%;
     font-size: 50px;
     font-weight: 700;
-    /* background: red; */
     padding: 20px 0px 10px 0px;
     color: #1B3764;
     display: flex;
@@ -78,7 +68,7 @@
 
 .banner__para {
     text-align: center;
-    padding: 0px 55px 0px 50px;
+    padding: 0px 60px 0px 60px;
     font-size: 20px;
     font-weight: 400;
     color: #1B3764;
@@ -92,33 +82,34 @@
 }
 
 .images__leftImg {
-    width: 480px;
+    width: 51%;
     z-index: 2;
     position: absolute;
     top: 360%;
-    height: 400px;
+    height: 450px;
 }
 
 .images__rightImg {
-    width: 560px;
+    width: 61%;
     position: absolute;
     left: 38%;
     height: 500px;
 }
 
 .mainBody {
-    /* background: red; */
     width: 90%;
-    height: 800px;
 }
 
 .body {
-    background: white;
-    /* justify-content: space-around; */
-    position: absolute;
+    width: 90%;
+}
+
+.body__top {
+    justify-content: space-between;
     width: 100%;
-    z-index: 4;
-    left: 5%;
+    background: white;
+    display: flex;
+    flex-direction: row;
 }
 
 .profile {
@@ -130,7 +121,6 @@
     width: 310px;
     justify-content: space-between;
     align-items: center;
-    /* background: red; */
 }
 
 .profile__logo {
@@ -216,11 +206,10 @@
     width: 470px;
     justify-content: space-between;
     position: absolute;
-    left: 49.2%;
-    /* background: green; */
+    left: 54.7%;
 }
 
-.info__heading {
+.box__heading {
     font-weight: 700;
     font-size: 40px;
 }
@@ -233,17 +222,283 @@
 }
 
 .info__form {
-    width:400px;
+    width: 400px;
     border-radius: 10px;
     height: 60%;
     background: white;
     border: 1px solid rgb(189, 187, 187);
     position: absolute;
     top: 25%;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.figma {
-    width: 450px;
+.figma,
+.webflow {
+    width: 400px;
+    align-items: center;
+    gap: 10px;
+}
 
+.figma__icon,
+.webflow__icon {
+    background: linear-gradient(180deg, #32323B 0%, #2C2B34 100%);
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.figma__heading,
+.webflow__heading {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.figma__heading--free {
+    color: #4353FF;
+}
+
+.figma__content,
+.webflow__content {
+    width: 300px;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.info__btn {
+    width: 380px;
+    color: white;
+    background: #4353FF;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+.body__bottom {
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 20px 30px 20px;
+}
+
+.bodyImages,
+.fonts {
+    width: 290px;
+    gap: 1em;
+}
+
+.pexels,
+.unsplash,
+.cardo,
+.Inter {
+    width: 290px;
+    gap: 1em;
+}
+
+.pexels__heading,
+.unsplash__heading,
+.cardo__heading,
+.Inter__heading {
+    align-items: center;
+    gap: 1em;
+}
+
+.pexels__head,
+.unsplash__head,
+.cardo__head,
+.Inter__head {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.pexels__content,
+.unsplash__content,
+.cardo__content,
+.Inter__content {
+    font-weight: 400;
+    font-size: 16px;
+    color: #646E79;
+}
+
+.pexels__content--span,
+.unsplash__content--span,
+.cardo__content--span,
+.Inter__content--span {
+    font-weight: 600;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.fonts--width {
+    width: 450px;
+}
+
+.footer {
+    width: 90%;
+}
+
+.footer__content {
+    padding: 30px;
+    color: white;
+    background: #0D161A;
+    text-align: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer__content--span {
+    color: #FFB322;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+@media (max-width:1115px) {
+    .body__top {
+        width: 105.5%;
+        flex-wrap: wrap !important;
+    }
+
+    .profile {
+        width: 100%;
+        align-items: center;
+    }
+
+    .info {
+        position: static;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info__right {
+        display: none;
+    }
+
+    .info__form {
+        position: static;
+        gap: 10px;
+        padding: 30px;
+    }
+}
+
+@media (max-width:890px) {
+
+    .body__top,
+    .body {
+        padding-top: 30px;
+    }
+}
+
+@media (max-width:710px) {
+    .body__bottom {
+        flex-direction: column;
+    }
+
+    .bodyImages,
+    .fonts {
+        width: 100%;
+        align-items: center;
+    }
+
+    .images__leftImg {
+        position: static;
+        width: 100%;
+    }
+
+    .images__rightImg,
+    .banner__ellipse {
+        display: none;
+    }
+}
+
+@media (max-width:650px) {
+
+    .footer__content,
+    .banner__para,
+    .profile__paragraph,
+    .insta__head,
+    .twitter__head,
+    .linkedin__head,
+    .insta__para,
+    .twitter__para,
+    .linkedin__para,
+    .pexels__head,
+    .unsplash__head,
+    .cardo__head,
+    .Inter__head,
+    .pexels__content,
+    .unsplash__content,
+    .cardo__content,
+    .Inter__content {
+        font-size: 15px;
+    }
+
+    .pexels,
+    .unsplash,
+    .cardo,
+    .Inter {
+        gap: 0em;
+    }
+
+    .box__heading {
+        font-size: 30px;
+    }
+
+    .figma__heading,
+    .webflow__heading,
+    .profile__para__heading {
+        font-size: 20px;
+    }
+
+    .body__top,
+    .body {
+        padding: 0;
+    }
+}
+
+@media (max-width:515px) {
+
+    .info__form,
+    .info__btn,
+    .figma,
+    .webflow,
+    .profile__body,
+    .insta,
+    .twitter,
+    .linkedin,
+    .profile__header {
+        width: 90%;
+    }
+
+    .images__leftImg {
+        height: 400px;
+    }
+
+    .body__bottom,
+    .profile {
+        padding: 0;
+    }
+
+    .info__form {
+        padding: 30px 2px 30px 2px;
+    }
+
+    .profile__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .profile__logo img {
+        height: 30px;
+        width: 30px;
+    }
+}
+
+@media (max-width:330px) {
+    .images__leftImg {
+        height: 340px;
+    }
 }

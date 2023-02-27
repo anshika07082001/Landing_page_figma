@@ -1,5 +1,6 @@
 import React from "react";
 import Body from "./Body";
+import Footer from "./Footer";
 import Header from "./Header";
 
 const Main = () => {
@@ -7,6 +8,7 @@ const Main = () => {
     <div className="container margin">
       <Header/>
       <Body/>
+      <Footer/>
     </div>
   );
 };

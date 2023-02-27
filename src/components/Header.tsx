@@ -3,7 +3,7 @@ import LibraryBooksOutlinedIcon from "@mui/icons-material/LibraryBooksOutlined";
 
 const Header = () => {
   return (
-    <div className="banner margin pr">
+    <section className="banner margin pr">
       <div className="banner__ellipse"></div>
       <div className="banner__ellipse banner__ellipse--sm"></div>
       {/* <div className='banner__ellipse banner__ellipse--lg'></div> */}
@@ -21,7 +21,7 @@ const Header = () => {
         <img src="image 1000.png" alt="" className="images__leftImg" />
         <img src="image 1003.png" alt="" className="images__rightImg" />
       </div>
-    </div>
+    </section>
   );
 };
 
