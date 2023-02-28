@@ -6,7 +6,6 @@ const Header = () => {
     <section className="banner margin pr">
       <div className="banner__ellipse"></div>
       <div className="banner__ellipse banner__ellipse--sm"></div>
-      {/* <div className='banner__ellipse banner__ellipse--lg'></div> */}
       <div className="banner__logo margin">
         <LibraryBooksOutlinedIcon className="logo__icon" />
         <span>Pages</span>

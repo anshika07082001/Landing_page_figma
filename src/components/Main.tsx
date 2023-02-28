@@ -6,8 +6,11 @@ import Header from "./Header";
 const Main = () => {
   return (
     <div className="container margin">
+      {/* rendering of header component */}
       <Header/>
+      {/* rendering of body component */}
       <Body/>
+      {/* rendering of footer component */}
       <Footer/>
     </div>
   );

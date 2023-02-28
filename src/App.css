@@ -1,3 +1,4 @@
+/* universal classes */
 .margin {
     margin: auto;
 }
@@ -20,6 +21,7 @@
     max-width: 1140px;
 }
 
+/* header component */
 .banner {
     width: 90%;
     height: 735px;
@@ -96,6 +98,7 @@
     height: 500px;
 }
 
+/* body component */
 .mainBody {
     width: 90%;
 }
@@ -158,45 +161,34 @@
     font-size: 25px;
 }
 
-.insta,
-.twitter,
-.linkedin {
+.sites {
     width: 400px;
     justify-content: space-between;
     align-items: center;
 }
 
-.insta img,
-.twitter img,
-.linkedin img {
+.sites img {
     width: 50px;
     height: 50px;
 }
 
-.insta__content,
-.twitter__content,
-.linkedin__content {
+.sites__content {
     align-items: flex-start;
     width: 320px;
 }
 
-.insta__head,
-.twitter__head,
-.linkedin__head {
+
+.sites__head {
     font-size: 20px;
     font-weight: 600;
     text-decoration-line: underline;
 }
 
-.insta__head--arrow,
-.twitter__head--arrow,
-.linkedin__head--arrow {
+.sites__head--arrow {
     text-decoration: none;
 }
 
-.insta__para,
-.twitter__para,
-.linkedin__para {
+.social__para {
     font-size: 18px;
     font-weight: 400;
     color: #646E79;
@@ -290,43 +282,28 @@
     gap: 1em;
 }
 
-.pexels,
-.unsplash,
-.cardo,
-.Inter {
+.social {
     width: 290px;
     gap: 1em;
 }
 
-.pexels__heading,
-.unsplash__heading,
-.cardo__heading,
-.Inter__heading {
+.social__heading {
     align-items: center;
     gap: 1em;
 }
 
-.pexels__head,
-.unsplash__head,
-.cardo__head,
-.Inter__head {
+.social__head {
     font-weight: 600;
     font-size: 20px;
 }
 
-.pexels__content,
-.unsplash__content,
-.cardo__content,
-.Inter__content {
+.social__content {
     font-weight: 400;
     font-size: 16px;
     color: #646E79;
 }
 
-.pexels__content--span,
-.unsplash__content--span,
-.cardo__content--span,
-.Inter__content--span {
+.social__content--span {
     font-weight: 600;
     color: #000000;
     text-decoration: underline;
@@ -336,6 +313,7 @@
     width: 450px;
 }
 
+/* footer component */
 .footer {
     width: 90%;
 }
@@ -355,6 +333,7 @@
     font-weight: 600;
 }
 
+/* media queries to make template responsive */
 @media (max-width:1115px) {
     .body__top {
         width: 105.5%;
@@ -417,29 +396,16 @@
 @media (max-width:650px) {
 
     .footer__content,
+    .social__para,
     .banner__para,
     .profile__paragraph,
-    .insta__head,
-    .twitter__head,
-    .linkedin__head,
-    .insta__para,
-    .twitter__para,
-    .linkedin__para,
-    .pexels__head,
-    .unsplash__head,
-    .cardo__head,
-    .Inter__head,
-    .pexels__content,
-    .unsplash__content,
-    .cardo__content,
-    .Inter__content {
+    .sites__head,
+    .social__head,
+    .social__content {
         font-size: 15px;
     }
 
-    .pexels,
-    .unsplash,
-    .cardo,
-    .Inter {
+    .social {
         gap: 0em;
     }
 
@@ -466,11 +432,10 @@
     .figma,
     .webflow,
     .profile__body,
-    .insta,
-    .twitter,
-    .linkedin,
+    .sites,
     .profile__header {
         width: 90%;
+        gap: 10px;
     }
 
     .images__leftImg {
@@ -500,5 +465,23 @@
 @media (max-width:330px) {
     .images__leftImg {
         height: 340px;
+    }
+
+    .figma__icon,
+    .webflow__icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .figma__icon img,
+    .webflow__icon img {
+        height: 25px;
+        width: 20px;
+    }
+
+    .social__heading img,
+    .sites img {
+        height: 40px;
+        width: 40px;
     }
 }

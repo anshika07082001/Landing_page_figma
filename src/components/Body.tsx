@@ -4,6 +4,7 @@ const Body = () => {
   return (
     <section className="mainBody margin">
       <div className="body column margin">
+        {/* body top */}
         <div className="body__top pr">
           <div className="profile column">
             <div className="profile__header row">
@@ -19,42 +20,42 @@ const Body = () => {
             </div>
             <div className="profile__body column">
               <span className="profile__bodyHeading">Follow Us</span>
-              <div className="insta row">
+              <div className="sites row">
                 <img src="instagram.png" alt="" />
-                <div className="insta__content column">
+                <div className="sites__content column">
                   <p className="row">
-                    <span className="insta__head">Instagram</span>
-                    <span className="insta__head insta__head--arrow">➔</span>
+                    <span className="sites__head">Instagram</span>
+                    <span className="sites__head sites__head--arrow">➔</span>
                   </p>
-                  <span className="insta__para">
+                  <span className="social__para">
                     Join our Instagram page, We share UI/UX Design tips.
                   </span>
                 </div>
               </div>
-              <div className="twitter row">
+              <div className="sites row">
                 <img src="Vector.png" alt="" style={{ width: "62px" }} />
-                <div className="twitter__content column">
+                <div className="sites__content column">
                   <p className="row">
-                    <span className="twitter__head">Twitter</span>
-                    <span className="twitter__head twitter__head--arrow">
+                    <span className="sites__head">Twitter</span>
+                    <span className="sites__head sites__head--arrow">
                       ➔
                     </span>
                   </p>
-                  <span className="twitter__para">
+                  <span className="social__para">
                     Join our Twitter page, We share UI/UX Design tips.
                   </span>
                 </div>
               </div>
-              <div className="linkedin row">
+              <div className="sites row">
                 <img src="Vector (3).png" alt="" />
-                <div className="linkedin__content column">
+                <div className="sites__content column">
                   <p className="row">
-                    <span className="linkedin__head">LinkedIn</span>
-                    <span className="linkedin__head linkedin__head--arrow">
+                    <span className="sites__head">LinkedIn</span>
+                    <span className="sites__head sites__head--arrow">
                       ➔
                     </span>
                   </p>
-                  <span className="linkedin__para">
+                  <span className="social__para">
                     Join our Linkedin page, We share UI/UX Design tips.
                   </span>
                 </div>
@@ -71,10 +72,10 @@ const Body = () => {
                 </div>
                 <div className="figma__content column">
                   <span className="figma__heading">
-                    Figma File for{" "}
+                    Figma File for
                     <label className="figma__heading--free">FREE</label>
                   </span>
-                  <span>
+                  <span className="social__para">
                     It is free to use for personal and commercial purposes.
                   </span>
                 </div>
@@ -85,7 +86,7 @@ const Body = () => {
                 </div>
                 <div className="webflow__content column">
                   <span className="webflow__heading">Webflow</span>
-                  <span>
+                  <span className="social__para">
                     The complete design is available as a Webflow template.
                   </span>
                 </div>
@@ -94,59 +95,60 @@ const Body = () => {
             </div>
           </div>
         </div>
+        {/* body bottom */}
         <div className="body__bottom row">
           <div className="bodyImages column">
             <span className="box__heading">Images</span>
-            <div className="pexels column">
-              <div className="row pexels__heading">
+            <div className="social column">
+              <div className="row social__heading">
                 <img src="Vector (5).png" alt="" />
-                <span className="pexels__head">
+                <span className="social__head">
                   Pexels<span></span>➔
                 </span>
               </div>
-              <p className="pexels__content">
+              <p className="social__content">
                 You can check the licenses and download the images for free on
-                <span className="pexels__content--span"> Pexels</span>
+                <span className="social__content--span"> Pexels</span>
               </p>
             </div>
-            <div className="unsplash column">
-              <div className="row unsplash__heading">
+            <div className="social column">
+              <div className="row social__heading">
                 <img src="Vector (4).png" alt="" />
-                <span className="unsplash__head">
+                <span className="social__head">
                   Unsplash<span></span>➔
                 </span>
               </div>
-              <p className="unsplash__content">
+              <p className="social__content">
                 You can check the licenses and download the images for free on
-                <span className="unsplash__content--span"> Unsplash</span>
+                <span className="social__content--span"> Unsplash</span>
               </p>
             </div>
           </div>
           <div className="fonts fonts--width column">
             <span className="box__heading">Fonts</span>
-            <div className="column cardo">
-              <div className="row cardo__heading">
+            <div className="column social">
+              <div className="row social__heading">
                 <img src="Vector (2).png" alt="" />
-                <span className="cardo__head">
+                <span className="social__head">
                   Cardo<span></span>➔
                 </span>
               </div>
-              <p className="cardo__content">
+              <p className="social__content">
                 Pages Book Website Template uses free licensed{" "}
-                <span className="cardo__content--span">Google Fonts.</span>
+                <span className="social__content--span">Google Fonts.</span>
               </p>
             </div>
 
-            <div className="column Inter">
-              <div className="row Inter__heading">
+            <div className="column social">
+              <div className="row social__heading">
                 <img src="Vector (2).png" alt="" />
-                <span className="Inter__head">
-                  Cardo<span></span>➔
+                <span className="social__head">
+                  Inter<span></span>➔
                 </span>
               </div>
-              <p className="Inter__content">
+              <p className="social__content">
                 Pages Book Website Template uses free licensed
-                <span className="Inter__content--span">Google Fonts.</span>
+                <span className="social__content--span">Google Fonts.</span>
               </p>
             </div>
           </div>
